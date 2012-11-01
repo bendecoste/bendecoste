@@ -1,0 +1,22 @@
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Winnie The Pooh To Make You Feel Good
+    link(href="/css/bootstrap.css", rel="stylesheet")
+    link(href="/css/winnie.css", rel="stylesheet")
+    | <style>
+    |   body {
+    |     background-image: url('img/winnie.jpeg');
+    |     background-repeat: no-repeat;
+    |     background-size: 100%;
+    |   }
+    | </style>
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/winnie.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js")
+  body
+    div.span8.offset3
+      div.hero-unit.shadow.fix
+        div.quotebox
+          p#quotebox
+        button#quote.btn.btn-primary.pull-right(onclick="getQuote()") New Quote
